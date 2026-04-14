@@ -1,3 +1,4 @@
+https://drive.google.com/file/d/1BklY7P_mkEwivCmXGGrj8jYtljIHfMfA/view?usp=drive_link
 # Team-Quantam-_-VeriAI-Verify-AI-
  Detect the Fake. Protect the Truth.
 
