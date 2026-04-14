@@ -31,6 +31,11 @@ file.save(filepath)
 ai_status = detect_image(filepath)
 doc_status = detect_document(filepath)
 
+ return render_template("index.html",ai_result=ai_status,doc_result=doc_status)
+
+if_name_ == "_main_":
+app.run(debug=True)
+
  
 
                         
