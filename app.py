@@ -24,5 +24,16 @@ file = request.files["file"]
 if file.filename == '':
     return "No selected file"
 
+filepath = os.path.join(app.config["UPLOAD_FOLDER"], file.filename)
+file.save(filepath)
+
+#Calling both detection functions
+ai_status = detect_image(filepath)
+doc_status = detect_document(filepath)
+
+ 
+
+                        
+
  
  
