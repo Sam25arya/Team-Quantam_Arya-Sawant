@@ -1,1 +1,24 @@
 <!DOCTYPE html>
+<html>
+<head>
+    <title>AI & Doc Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="card">
+        <h2>VeriAI</h2>
+        <p><i>Detect the Fake. Protect the Truth.</i></p>
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" required>
+            <button type="submit">Analyze File</button>
+        </form>
+
+        {% if ai_result %}
+        <div class="results">
+            <p><strong>Integrity:</strong> {{ ai_result }}</p>
+            <p><strong>Type:</strong> {{ doc_result }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
